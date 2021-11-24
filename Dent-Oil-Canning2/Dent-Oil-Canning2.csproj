@@ -142,7 +142,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\dentResistanceModelController.cs" />
-    <Compile Include="Controllers\dr_GradesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -192,11 +191,6 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\dr_Grades\Create.cshtml" />
-    <Content Include="Views\dr_Grades\Delete.cshtml" />
-    <Content Include="Views\dr_Grades\Details.cshtml" />
-    <Content Include="Views\dr_Grades\Edit.cshtml" />
-    <Content Include="Views\dr_Grades\Index.cshtml" />
     <Content Include="Views\dentResistanceModel\Index.cshtml" />
     <Content Include="Views\dentResistanceModel\_formEntry.cshtml" />
   </ItemGroup>

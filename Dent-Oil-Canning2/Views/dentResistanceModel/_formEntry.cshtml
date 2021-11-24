@@ -1,15 +1,6 @@
 ﻿@using Dent_Oil_Canning2.Models
 @model dr_Grades
 
-@*@using Dent_Oil_Canning2.ViewModels
-    @model DrGradesViewModel*@
-@*@model IEnumerable<Dent_Oil_Canning2.Models.db_models.dr_Grades>*@
-
-@*@{
-        ViewBag.Title = "Index";
-        Layout = "~/Views/Shared/_Layout.cshtml";
-    }*@
-
 <table class="table" align='center' width='50%' cellpadding=0 cellspacing=0 border=0>
     <tr>
         <th width='11%' nowrap align=center valign="bottom" rowspan=2 style="border:1px solid black;">&nbsp;Grade&nbsp;</th>
@@ -37,7 +28,7 @@
         <td width='11%' nowrap align=center bgcolor='' style="border:1px solid black;">
             &nbsp;
             <input type='Text' id='R1' name='R1'
-                    size='' value='' class=small>&nbsp;
+                    size='5' value='' class=small>&nbsp;
         </td>
         <td width='11%' nowrap align=center bgcolor='' style="border:1px solid black;">
             &nbsp;
@@ -64,7 +55,7 @@
         </td>
         <td width='11%' nowrap align=center style="border:1px solid black;">&nbsp;.1&nbsp;</td>
         <td width='23%' nowrap align=center colspan=2 style="border:1px solid black;">
-            <input type='button' value='Calculate' disabled id='Submit' name='Submit' onclick='verify()'>
+            <input type='button' value='Calculate' id='Submit' name='Submit' onclick='verify()'>
             <input type='hidden' value='yes' id='Submitted' name='Submitted'>
             <input type='hidden' value='" & request("mode") & "' id='mode' name='mode'>
             <input type='hidden' value='" & strGradeKey & "' id='CurrentGradeKey' name='CurrentGradeKey'>
