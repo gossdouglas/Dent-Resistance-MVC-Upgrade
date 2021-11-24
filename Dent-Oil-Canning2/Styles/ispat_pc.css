@@ -1,0 +1,1069 @@
+/*********************************************************/
+/*PLEASE COPY ANY CHANGES TO SYWEBOUT/PartnerCentre ALSO*/
+/*********************************************************/
+
+
+/* Body Layout */
+BODY {
+	background-image: url(images/bkg_cust.gif);
+	background-repeat: repeat-x;
+	/*marginheight: 0;
+	marginwidth: 0;
+	leftmargin: 0;
+	topmargin: 0;*/
+	color: Black;
+	background-color: White;
+	}
+
+/*  jhf 3/28/04  */
+.s1{color: black; background-color: #CCCCCC;}
+
+
+/*  text formating  */
+P,TD,A,FONT
+	{font-size: 12px;
+	font-family: arial, sans-serif, geneva;}
+
+TH
+	{font-size: 12px;
+	font-family: arial, sans-serif, geneva;
+	color: #ffffff;
+	font-weight: bold;
+	background-color: #7299C6;
+	background-color: #7299C6;
+	text-decoration: none;}
+
+.guiStyle{
+   font-family: Verdana, arial, sans-serif;
+   font-size:10px;
+   background:white;
+	color:black;
+   }
+/*  dat 6/01/04  */
+.small10
+	{font-size: 10px;}
+
+.small
+	{font-size: 11px;}
+
+.smallstrong
+	{font-size: 12px;
+	font-weight: bold;
+	}
+
+.big
+	{font-size: 13px;}
+
+.bigstrong
+	{font-size: 16px;
+	font-weight: bold;
+	}
+
+.blurb
+	{font-size: 19px;
+	color: #999999;
+	background-color: White;
+	font-weight: bold;}
+
+.blurbsmall
+	{font-size: 14px;
+	background-color: White;
+	color: #999999;
+	font-weight: bold;}
+
+.hist
+	{font-size: 19px;
+	background-color: White;
+	color: #999999;}
+
+.tindent
+	{margin-left: 14px;}
+
+.white,.prod
+	{color: #ffffff;
+	 background-color: #000000;}
+
+/* dat 6/1/04  */
+.oldwhite:link,.oldwhite:visited,.oldwhite:active,.oldwhite:hover
+	{color: #ffffff;
+	font-weight: bold;
+	margin: 3px 3px 6px 10px;
+	padding-bottom: 3px;
+	font-family: Verdana,Geneva,Arial,Helvetica;
+	font-size: 11px;
+	text-decoration: none;
+	margin-bottom: 2px;}
+
+/*  title formating  */
+.tismall
+	{font-size: 11px;
+	font-weight: bold;}
+
+.ti
+	{font-size: 12px;
+	font-weight: bold;}
+
+.tibig
+	{font-size: 13px;
+	font-weight: bold;}
+
+.tibig2
+	{font-size: 15px;
+	font-weight: bold;}
+
+.tiwhite
+	{font-size: 12px;
+	color: #ffffff;
+	background-color: Black;
+	font-weight: bold;
+	margin-left: 14px;
+	text-decoration: none;}
+
+.tiorange
+	{font-size: 12px;
+	color: #324299;
+	background-color: transparent;
+	font-weight: bold;}
+
+.tiI4Shighlight
+	{font-size: 12px;
+	color: #3d84c4;
+	background-color: transparent;
+	font-weight: bold;}
+
+.tbI4Sheader
+	{background-color: #fff8dc;}
+
+.tiI4Sheaderinput
+	{background-color: #fff8dc;}
+
+.tiI4Sbig
+	{font-size: 13px;
+	font-weight: bold;}
+
+.tiI4SbigTotal
+	{font-size: 13px;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #7299C6;}
+
+.tiI4SbigCatTotal
+	{font-size: 13px;
+	font-weight: bold;
+	background-color: #3d84c4;}
+
+.tiI4SbigMajTotal
+	{font-size: 13px;
+	font-weight: bold;
+	background-color: #dddddd;}
+
+.tiI4SbigMinTotal
+	{font-size: 13px;
+	font-weight: bold;
+	background-color: #fff8dc;}
+
+/*color: #3d84c4;*/
+/*color: #fff8dc;*/
+/*color: #dddddd;*/
+
+.tiorangeind
+	{font-size: 12px;
+	color: #7299C6;
+	background-color: transparent;
+	font-weight: bold;
+	margin-left: 14px;
+	text-decoration: none;}
+
+.tiorangebig
+	{font-size: 16px;
+	color: #7299C6;
+	background-color: transparent;
+	font-weight: bold;}
+
+.tiFFCC99
+	{font-size: 12px;
+	color: #FFCC99;
+	background-color: transparent;
+	font-weight: bold;
+	margin-left: 14px;}
+
+/*  bullet formating  */
+.bullet
+	{
+	text-indent: -11px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 2px;
+    margin-left: 9px;}
+
+/*  input formating  */
+.monospace
+	{ font-family:Courier,monospace; }
+
+/*  links formating  */
+A:link
+	{color: #003399;
+	background-color: transparent;
+	text-decoration: None;}
+A:visited
+	{color: #003399;
+	background-color: transparent;
+	text-decoration: None;}
+A:active
+	{color: #003399;
+	background-color: transparent;
+	text-decoration: None;}
+A:hover
+	{color: #CC0000;
+	background-color: transparent;
+	text-decoration: None;}
+
+/* added for the 'Viewed' link on the	*/
+/* advanced search						*/
+A.search:link
+	{color: #ffffff;
+	background-color: transparent;
+	text-decoration: None;}
+A.search:visited
+	{color: #003399;
+	background-color: transparent;
+	text-decoration: None;}
+A.search:active
+	{color: #ffffff;
+	background-color: transparent;
+	text-decoration: None;}
+A.search:hover
+	{color: #ffffff;
+	background-color: transparent;
+	text-decoration: None;}
+
+/* rak 06/30/04                         */
+/* added for the 'doc view'page  	*/
+/* to control color of viewed docs      */
+A.search2:link
+	{color: #003399;
+	background-color: transparent;
+	text-decoration: None;}
+A.search2:visited
+	{color: #CC0000;
+	background-color: transparent;
+	text-decoration: none;}
+A.search2:active
+	{color: #003399;
+	background-color: transparent;
+	text-decoration: none;}
+A.search2:hover
+	{color: #CC0000;
+	background-color: transparent;
+	text-decoration: None;}
+A.menu:link
+	{color: white;
+	background-color: transparent;
+	text-decoration: None;}
+A.menu:visited
+	{color: white;
+	background-color: transparent;
+	text-decoration: None;}
+A.menu:active
+	{color: white;
+	text-decoration: None;
+	background : #7299C6;}
+A.menu:hover
+	{color: white;
+	text-decoration: None;
+	background : #7299C6;}
+
+/* added for Inventory for Sale	*/
+A:link.hrefunderline {
+	color: #003399;
+	background-color: transparent;
+	text-decoration: underline;
+	font-weight: bold;}
+A:active.hrefunderline {
+	color: #003399;
+	background-color: transparent;
+	text-decoration: underline;
+	font-weight: bold;}
+A:visited.hrefunderline {
+	color: #003399;
+	background-color: transparent;
+	text-decoration: underline;
+	font-weight: bold;}
+A:hover.hrefunderline {
+	color: #003399;
+	background-color: transparent;
+	text-decoration: underline;
+	font-weight: bold;}
+
+A:link.hrefwarnunderline {
+	color: red;
+	background-color: transparent;
+	text-decoration: underline;
+	font-weight: bold;}
+A:active.hrefwarnunderline {
+	color: red;
+	background-color: transparent;
+	text-decoration: underline;
+	font-weight: bold;}
+A:visited.hrefwarnunderline {
+	color: red;
+	background-color: transparent;
+	text-decoration: underline;
+	font-weight: bold;}
+A:hover.hrefwarnunderline {
+	color: red;
+	background-color: transparent;
+	text-decoration: underline;
+	font-weight: bold;}
+
+.black:link,.black:visited,.black:active,.black:hover
+	{color: #000000;
+	background-color: transparent;}
+
+.blue:link,.blue:visited,.blue:active,.blue:hover
+	{color: #CC0000;
+	background-color: transparent;}
+
+.white:link,.white:visited,.white:active,.white:hover
+	{color: #ffffff;
+	background-color: transparent;
+	text-decoration: none;}
+
+.orange:link,.orange:visited,.orange:active,.orange:hover
+	{color: #7299C6;
+	background-color: transparent;
+	text-decoration: none;}
+
+/*  links formating  */
+A.tibigorange:link
+	{color: #7299C6;
+	background-color: transparent;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;}
+A.tibigorange:visited
+	{color: #7299C6;
+	background-color: transparent;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;}
+A.tibigorange:active
+	{color: #7299C6;
+	background-color: transparent;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;}
+A.tibigorange:hover
+	{color: #7299C6;
+	background-color: transparent;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;}
+
+.prod:link,.prod:visited,.prod:active,.prod:hover
+	{color: #ffffff;
+	background-color: transparent;}
+
+/*  Navigation Tables fond orange  */
+A.table:link
+	{color: #ffffff;
+	background-color: transparent;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: Geneva,Arial,sans-serif;}
+
+A.table:visited
+	{color: #ffffff;
+	background-color: transparent;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: Geneva,Arial,sans-serif;}
+
+A.table:active
+	{color: #ffffff;
+	background-color: transparent;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: Geneva,Arial,sans-serif;}
+
+A.table:hover
+	{color: #ffffff;
+	background-color: transparent;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: Geneva,Arial,sans-serif;}
+/*  Navigation Tables fond orange SHADE */
+A.tableh:link
+	{color: #4682B4;
+	background-color: transparent;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: Geneva,Arial,sans-serif;}
+
+A.tableh:visited
+	{color: #4682B4;
+	background-color: transparent;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: Geneva,Arial,sans-serif;}
+
+A.tableh:active
+	{color: #4682B4;
+	background-color: transparent;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: Geneva,Arial,sans-serif;}
+
+A.tableh:hover
+	{color: #4682B4;
+	background-color: transparent;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: Geneva,Arial,sans-serif;}
+
+/*  Navigation Site Map  */
+A.map:link
+	{color: #990000;
+	background-color: transparent;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: Geneva,Arial,sans-serif;}
+
+A.map:visited
+	{color: #990000;
+	background-color: transparent;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: Geneva,Arial,sans-serif;}
+
+A.map:active
+	{color: #990000;
+	background-color: transparent;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: Geneva,Arial,sans-serif;}
+
+A.map:hover
+	{color: #990000;
+	background-color: transparent;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: Geneva,Arial,sans-serif;}
+
+
+/*  Navigation Level 1,2 & Menu Formation  */
+A.navig:link
+	{color: #ffffff;
+	background-color: transparent;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: Verdana,Geneva,Arial,Helvetica;}
+
+A.navig:visited
+	{color: #ffffff;
+	background-color: transparent;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: Verdana,Geneva,Arial,Helvetica;}
+
+A.navig:active
+	{color: #ffffff;
+	background-color: transparent;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: Verdana,Geneva,Arial,Helvetica;}
+
+A.navig:hover
+	{color: #ffffff;
+	background-color: transparent;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: Verdana,Geneva,Arial,Helvetica;}
+
+/* Navigation level 3 Formataing */
+
+.niv3l
+	{font-size: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 2px;
+	text-decoration: none;
+	font-family: Verdana,Geneva,Arial,Helvetica;}
+
+.niv3l0
+	{font-size: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 2px;
+	text-decoration: none;
+	font-family: Verdana,Geneva,Arial,Helvetica;}
+
+.niv3l1
+	{font-size: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 2px;
+	text-decoration: none;
+	font-family: Verdana,Geneva,Arial,Helvetica;}
+
+.niv3l2
+	{font-size: 10px;
+	text-indent: -14px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 2px;
+    margin-left: 14px;
+	text-decoration: none;
+	font-family: Verdana,Geneva,Arial,Helvetica;}
+
+.niv3l3
+	{font-size: 10px;
+	text-indent: -18px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 2px;
+    margin-left: 18px;
+	text-decoration: none;
+	font-family: Verdana,Geneva,Arial,Helvetica;}
+
+.niv3l4
+	{font-size: 10px;
+	text-indent: -30px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 2px;
+    margin-left: 30px;
+	text-decoration: none;
+	font-family: Verdana,Geneva,Arial,Helvetica;}
+
+A.niv3:link
+	{color: #000000;
+	background-color: transparent;
+	font-size: 10px;
+	text-decoration: none;
+	font-family: Verdana,Geneva,Arial,Helvetica;}
+
+A.niv3:visited
+	{color: #000000;
+	background-color: transparent;
+	font-size: 10px;
+	text-decoration: none;
+	font-family: Verdana,Geneva,Arial,Helvetica;}
+
+A.niv3:active
+	{color: #000000;
+	background-color: transparent;
+	font-size: 10px;
+	text-decoration: none;
+	font-family: Verdana,Geneva,Arial,Helvetica;}
+
+A.niv3:hover
+	{color: #CC0000;
+	background-color: transparent;
+	font-size: 10px;
+	text-decoration: none;
+	font-family: Verdana,Geneva,Arial,Helvetica;}
+
+
+/* DHTML CSS */
+
+.s
+	{position: absolute;
+	visibility: hidden;
+	left:25px;
+	top:25px;
+	width: 130px;
+	background-color: #999999;
+	background-color: #999999;}
+
+.noShow
+	{
+	position: absolute;
+	visibility: hidden;
+	left:25px;
+	top:25px;
+	width: 130px;
+	}
+.ss
+	{position: absolute;
+	visibility: hidden;
+	left:25px;
+	top:25px;
+	width: 161px;
+	background-color: #999999;
+	background-color: #999999;}
+.zz
+	{position: absolute;
+	visibility: hidden;
+	left:25px;
+	top:25px;
+	width: 80px;
+	background-color: #999999;
+	background-color: #999999;}
+
+.gNarrow
+	{position: absolute;
+	visibility: visible;
+	width: 15px;
+	height: 20px;}
+
+.g
+	{position: absolute;
+	visibility: visible;
+	width: 60px;
+	height: 20px;}
+
+.gwide
+	{position: absolute;
+	visibility: visible;
+	width: 140px;
+	height: 20px;}
+
+P.t
+	{font-weight: bold;
+	margin: 3px 3px 2px 10px;
+	padding-bottom: 3px;
+	color: white;
+	background-color: transparent;
+	font-family: Verdana,Geneva,Arial,Helvetica;
+	font-size: 11px;
+	text-decoration: none;}
+
+
+.b
+	{position: absolute;
+	left: 1px;
+	color: white;
+	background-color: transparent;
+	width: 159px;
+	font-family: Verdana,Geneva,Arial,Helvetica;}
+
+.bm
+	{position: absolute;
+	left: 1px;
+	color: white;
+	background-color: transparent;
+	width: 128px;
+	font-family: Verdana,Geneva,Arial,Helvetica;}
+
+A.invoicepdf:link { COLOR: blue;
+	background-color: transparent;
+    FONT-FAMILY: Arial;
+    FONT-WEIGHT: bold;
+    TEXT-DECORATION: none }
+A.invoicepdf:active { COLOR: blue;
+	background-color: transparent;
+    FONT-FAMILY: Arial;
+    FONT-WEIGHT: bold;
+    TEXT-DECORATION: none }
+A.invoicepdf:visited { COLOR: magenta;
+	background-color: transparent;
+    FONT-FAMILY: Arial;
+    FONT-WEIGHT: bold;
+    TEXT-DECORATION: none }
+A.invoicepdf:hover { COLOR: red;
+	background-color: transparent;
+    FONT-FAMILY: Arial;
+    FONT-WEIGHT: bold;
+    TEXT-DECORATION: none }
+
+A:link.red { Color:red;
+	background-color: transparent;
+	Text-Decoration:None;
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: Arial; }
+A:active.red { Color:red;
+	background-color: transparent;
+	Text-Decoration:None;
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: Arial; }
+A:visited.red { Color:red;
+	background-color: transparent;
+	Text-Decoration:None;
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: Arial; }
+A:hover.red { Color:black;
+	background-color: transparent;
+	Text-Decoration:None;
+	font-weight: bold;
+	font-size: 10pt;
+	font-family: Arial; }
+A:link.blue { Color:blue;
+	background-color: transparent;
+	Text-Decoration:None;
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: Arial; }
+A:active.blue { Color:blue;
+	background-color: transparent;
+	Text-Decoration:None;
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: Arial; }
+A:visited.blue { Color:blue;
+	background-color: transparent;
+	Text-Decoration:None;
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: Arial; }
+A:hover.blue { Color:black;
+	background-color: transparent;
+	Text-Decoration:None;
+	font-weight: bold;
+	font-size: 10pt;
+	font-family: Arial; }
+A:link.purple { Color:purple;
+	background-color: transparent;
+	Text-Decoration:None;
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: Arial; }
+A:active.purple { Color:purple;
+	background-color: transparent;
+	Text-Decoration:None;
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: Arial; }
+A:visited.purple { Color:purple;
+	background-color: transparent;
+	Text-Decoration:None;
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: Arial; }
+A:hover.purple { Color:black;
+	background-color: transparent;
+	Text-Decoration:None;
+	font-weight: bold;
+	font-size: 10pt;
+	font-family: Arial; }
+A:link.green { Color:green;
+	background-color: transparent;
+	Text-Decoration:None;
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: Arial; }
+A:active.green { Color:green;
+	background-color: transparent;
+	Text-Decoration:None;
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: Arial; }
+A:visited.green { Color:green;
+	background-color: transparent;
+	Text-Decoration:None;
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: Arial; }
+A:hover.green { Color:black;
+	background-color: transparent;
+	Text-Decoration:None;
+	font-weight: bold;
+	font-size: 10pt;
+	font-family: Arial; }
+A:link.magenta { Color:magenta;
+	background-color: transparent;
+	Text-Decoration:None;
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: Arial; }
+A:active.magenta { Color:magenta;
+	background-color: transparent;
+	Text-Decoration:None;
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: Arial; }
+A:visited.magenta { Color:magenta;
+	background-color: transparent;
+	Text-Decoration:None;
+	font-weight: bold;
+	font-size: 8pt;
+	font-family: Arial; }
+A:hover.magenta { Color:black;
+	background-color: transparent;
+	Text-Decoration:None;
+	font-weight: bold;
+	font-size: 10pt;
+	font-family: Arial; }
+
+A:link.headlink { Color:cyan;
+	background-color: transparent;
+	Text-Decoration:None;
+	font-weight: bold;
+	font-size: 10pt;
+	font-family: Arial; }
+A:active.headlink { Color:yellow;
+	background-color: transparent;
+	Text-Decoration:None;
+	font-weight: bold;
+	font-size: 10pt;
+	font-family: Arial; }
+A:visited.headlink { Color:cyan;
+	background-color: transparent;
+	Text-Decoration:None;
+	font-weight: bold;
+	font-size: 10pt;
+	font-family: Arial; }
+A:hover.headlink { Color:yellow;
+	background-color: transparent;
+	Text-Decoration:None;
+	font-weight: bold;
+	font-size: 10pt;
+	font-family: Arial; }
+
+/*  dat 6/01/04  */
+SELECT.mono { COLOR: #003399;
+    FONT-FAMILY: monospace;
+    FONT-SIZE: 11px }
+INPUT.mono { COLOR: #003399;
+    FONT-FAMILY: monospace;
+    FONT-SIZE: 11px}
+
+/*  jtq 11/29/04  */
+.btnVI { COLOR: #003399;
+    FONT-FAMILY: monospace;
+    FONT-SIZE: 12px}
+
+.tiVIhighlight { COLOR: blue;
+	 font-weight: bold;
+    FONT-SIZE: 13px}
+
+/*dotNet Menu classes */
+
+.MenuAdjustedZIndex {
+    z-index: 1;
+}
+
+.MenuItemHover
+{
+    PADDING-RIGHT: 1px;
+    PADDING-LEFT: 1px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    PADDING-BOTTOM: 2px;
+    COLOR: #ffffff !important;
+    PADDING-TOP: 1px;
+    BACKGROUND-COLOR: #999999;
+    TEXT-DECORATION: none
+}
+.MenuFlyItemOver
+{
+
+    height: 25px;
+    border-top: silver 1px groove;
+    BORDER-RIGHT: silver 1px groove;
+    PADDING-RIGHT: 1px;
+    PADDING-LEFT: 1px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    BORDER-LEFT: silver 1px groove;
+    COLOR: #ffffff !important;
+    BORDER-BOTTOM: silver 1px groove;
+    BACKGROUND-COLOR: #999999;
+    /*CURSOR: hand;*/
+    TEXT-DECORATION: none
+}
+.MenuFlyItem
+{   height: 25px;
+    border-top: silver 1px groove;
+    BORDER-RIGHT: silver 1px groove;
+    PADDING-RIGHT: 1px;
+    PADDING-LEFT: 1px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    BORDER-LEFT: silver 1px groove;
+    COLOR: #ffffff !important;
+    BORDER-BOTTOM: silver 1px groove;
+    BACKGROUND-COLOR: #6d6d6d;
+    TEXT-DECORATION: none
+
+}
+.MenuItem
+{
+    PADDING-RIGHT: 1px;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    PADDING-BOTTOM: 2px;
+    COLOR: #ffffff !important;
+    PADDING-TOP: 2px;
+    BACKGROUND-COLOR: #6d6d6d;
+    TEXT-DECORATION: none
+}
+.MenuItemOver
+{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    PADDING-RIGHT: 1px;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    /*CURSOR: hand;*/
+    COLOR: #ffffff !important;
+    BACKGROUND-COLOR: #999999;
+    TEXT-DECORATION: none
+}
+.MenuGroup
+{
+    BORDER-RIGHT: #6d6d6d 0px groove;
+    BORDER-TOP: #6d6d6d 0px groove;
+    FONT-WEIGHT: bold;
+    BORDER-LEFT: #6d6d6d 0px groove;
+    BORDER-BOTTOM: #6d6d6d 0px groove
+}
+.SubMenuGroup
+{
+    BORDER-RIGHT: #6d6d6d 1px groove;
+    FONT-WEIGHT: bold;
+    BORDER-LEFT: #6d6d6d 1px groove;
+    BORDER-BOTTOM: #6d6d6d 1px groove
+}
+.LeftMenuItem
+{   height: 35px;
+    padding-top: 1px;
+    padding-bottom: 6px;
+    PADDING-RIGHT: 1px;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    BORDER-LEFT: silver 1px groove;
+    COLOR: #ffffff !important;
+    BORDER-BOTTOM: silver 1px groove;
+    BACKGROUND-COLOR: #333333;
+    TEXT-DECORATION: none
+
+}
+
+.LeftMenuFlyItem
+{   height: 30px;
+   /* border-top: silver 1px groove;
+    BORDER-RIGHT: silver 1px groove;*/
+    PADDING-RIGHT: 1px;
+    PADDING-LEFT: 1px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    BORDER-LEFT: silver 1px groove;
+    COLOR: #ffffff !important;
+    BORDER-BOTTOM: silver 1px groove;
+    BACKGROUND-COLOR: #6d6d6d;
+    TEXT-DECORATION: none
+
+}
+.LeftMenuFlyItemOver
+{
+
+    height: 30px;
+    /* border-top: silver 1px groove;
+    BORDER-RIGHT: silver 1px groove;*/
+    PADDING-RIGHT: 1px;
+    PADDING-LEFT: 1px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    BORDER-LEFT: silver 1px groove;
+    COLOR: #ffffff !important;
+    BORDER-BOTTOM: silver 1px groove;
+    BACKGROUND-COLOR: #999999;
+    /*CURSOR: hand;*/
+    TEXT-DECORATION: none
+}
+.LeftMenuItemOver
+{   height: 35px;
+    padding-top: 1px;
+    padding-bottom: 6px;
+    PADDING-RIGHT: 1px;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    BORDER-LEFT: silver 1px groove;
+    /*CURSOR: hand;*/
+    COLOR: #ffffff !important;
+    BORDER-BOTTOM: silver 1px groove;
+    BACKGROUND-COLOR: #999999;
+    TEXT-DECORATION: none
+}
+.LeftMenuGroup
+{
+    BORDER-RIGHT: silver 1px groove;
+    PADDING-RIGHT: 1px;
+    PADDING-LEFT: 1px;
+    FONT-WEIGHT: bold;
+    PADDING-BOTTOM: 1px;
+    BORDER-LEFT: silver 1px groove;
+    PADDING-TOP: 1px;
+    BORDER-BOTTOM: silver 1px groove;
+    BACKGROUND-COLOR: #6d6d6d
+}
+.LeftSubMenuGroup
+{
+    BORDER-RIGHT: silver 1px groove;
+    PADDING-RIGHT: 1px;
+    PADDING-LEFT: 1px;
+    FONT-WEIGHT: bold;
+    PADDING-BOTTOM: 1px;
+    BORDER-LEFT: silver 1px groove;
+    PADDING-TOP: 1px;
+    BORDER-BOTTOM: silver 1px groove;
+    BACKGROUND-COLOR: #6d6d6d
+}
+.OrderTrackingTable
+    {FONT-SIZE: 9pt !important;
+    }
+
+.Datagrid	{
+	font-size:	10pt !important;
+	font-weight: normal;
+	background-color: #ffffff;
+	color: #000000;
+	padding-left: 2px;
+	padding-right: 2px;
+	vertical-align: top;
+	text-align: right;
+	}
+
+.topmargin1
+
+{
+PADDING-TOP: 18px;
+}
+.sidetable
+
+{
+    MARGIN-TOP: 18px;
+   	BORDER-LEFT: #aacbee 1px solid;
+    BORDER-BOTTOM: #aacbee 1px solid;
+    BORDER-TOP: #aacbee 1px solid;
+    BORDER-RIGHT: #aacbee 1px solid
+
+}
+
+.sidetableH2
+
+{
+    PADDING-RIGHT: 6px;
+    PADDING-LEFT: 6px;
+    PADDING-BOTTOM: 3px;
+    MARGIN: 0px 0px 6px;
+    COLOR: #ffffff;
+	font-size: 12px;
+	font-family: geneva, arial, sans-serif;
+    /*font-weight: bold;*/
+	PADDING-TOP: 3px;
+    BORDER-BOTTOM: #aacbee 1px solid;
+    BACKGROUND-COLOR: #7299C6 !important;
+	/*BACKGROUND-COLOR: #ffffff*/
+}
+.sidetabletext
+{
+	PADDING-RIGHT: 6px;
+    PADDING-LEFT: 6px;
+    PADDING-BOTTOM: 3px;
+    MARGIN: 0px 0px 6px;
+    font-size: 12px;
+    font-family: geneva, arial, sans-serif;
+}

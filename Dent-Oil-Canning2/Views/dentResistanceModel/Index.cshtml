@@ -1,0 +1,29 @@
+﻿@using Dent_Oil_Canning2.Models
+@model dr_Grades
+
+@*@using Dent_Oil_Canning2.ViewModels
+    @model DrGradesViewModel*@
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="styles/ispat_pc.css" rel="styleSheet" type="text/css">
+
+<h2>Load for 0.1mm Dent Depth</h2>
+
+@using (@Html.BeginForm("Index", "dentResistanceModel", FormMethod.Post, new { @class = "m-form m-form--fit m-form--label-align-right", id = "hcform", enctype = "multipart/form-data" }))
+{
+    @*<input type="hidden" name="UserID" id="UserID" value="@ViewBag.Id" />
+        <input type="hidden" name="SubmissionDate" id="SubmissionDate" value="@ViewBag.SubmissionDate" />*@
+
+    @*@Html.HiddenFor(m => m.IsSaved)
+        @Html.HiddenFor(hc => hc.HearingConservationQuestionnaireID)*@
+
+    @Html.Partial("_formEntry", @Model)
+
+}
+
+

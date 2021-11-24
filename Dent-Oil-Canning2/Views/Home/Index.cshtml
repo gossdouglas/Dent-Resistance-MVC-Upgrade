@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<table>
+    <tr>
+        <th colspan="2" align="center">Models:</th>
+    </tr>
+    <tr>
+        <td width='2%' valign='top'>1.</td>
+        <td width='98%' align="left">
+            <a href='/dentResistanceModel'>
+                <b>Load for 0.1mm Dent Depth</b>
+            </a><br>A commonly accepted measure of quasi-static dent resistance is the load to produce a residual dent of depth 0.1mm, which is considered as a visible dent for most panel conditions.  The visible dent load is determined by linear regression between the pair of load-dent depth data that are closest to 0.1mm.
+            <p>
+                <center>
+                    <img src='images/dentresistance2.gif'><br><small>Figure 1: Load vs. dent depth characteristics.</small>
+                </center>
+        </td>
+    </tr>
+    <tr>
+        <td width='2%' valign='top'>2.</td>
+        <td width='98%' align="left">
+            <a href='/dentResistanceModel2'>
+                <b>Dent Depth for a Given Applied Load</b>
+            </a><br>Often, it is useful to determine the dent depth at any applied load.  Figure 1 shows a typical load vs. dent depth plot.  Using these characteristic plots, it is possible to determine the resulting dent depth in a panel for any given applied load. "
+            <p>
+                <center>
+                    <img src='images/dentresistance2.gif'><br><small>Figure 1: Load vs. dent depth characteristics.</small>
+                </center>
+        </td>
+    </tr>
+    <tr>
+        <td width='2%' valign='top'>3.</td>
+        <td width='98%' align="left">
+            <a href='../oilcanning_silverlight'>
+                <b>Oil Canning</b>
+            </a><br>Description for the oil canning tool. "
+            <p>
+                <center>
+                    <img src='images/dentresistance2.gif'><br><small>Figure 2: Image for oil canning.</small>
+                </center>
+        </td>
+    </tr>
+</table>
+
+<h4 style="font-size: 12px;
+	font-family: geneva, arial, sans-serif;
+	color: #ffffff;
+	font-weight: bold;
+	background-color: #4682B4;
+	text-decoration: none;">
+    Brief Description of Dent Resistance models
+</h4>
+    In North America, dent resistance has been most commonly evaluated by testing panel assemblies using the Auto/Steel Partnership procedure for quasi-static denting [1].  The dent test procedure consists of using a 25.4mm spherical indenter to apply a series of incrementally increasing loads to the panel.  Figure 2 shows a schematic of the data generated using the Auto/Steel Partnership procedure for evaluation of dent resistance.  In the development of the dent resistance model displayed on this website, FEA simulations of the denting process were used.  The FEA simulations closely matched the Auto/Steel Partnership dent test procedure.
+    <p>
+        <center><img src="images/dentresistance1.gif"><br><small>Figure 3: Schematic of the load-deflection data generated for quasi-static dent testing [1].</small></center>
+        <br>
+        <br><b>References:</b><br> 1.	<u>Procedures for evaluating dent resistance of automotive body panels</u>, Auto/Steel Partnership, Southfield, MI, January 2001.
