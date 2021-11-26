@@ -7,7 +7,8 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using Dent_Oil_Canning2.Models;
-using Dent_Oil_Canning2.Models.db_models;
+using Dent_Oil_Canning2.ViewModels;
+using DRFormula;
 
 namespace Dent_Oil_Canning2.Controllers
 {
@@ -34,6 +35,21 @@ namespace Dent_Oil_Canning2.Controllers
                     };
                     grades.Add(temp);
                 }
+            }
+
+            DRFormula.Formula objDRCalc = new DRFormula.Formula();
+            //DRFormula.FormulaClass objDRCalc = new DRFormula.FormulaClass();
+
+            //Formula objDRCalc = new Formula();
+            bool bCalculated;
+            //bCalculated = objDRCalc.Calculate(1, 150, 15000, .25, .25, .65);
+            bCalculated = objDRCalc.Calculate(-1, -1, -1, 0, 0, 0);
+            decimal.Round((decimal)objDRCalc.LBF, 2);
+
+            if (bCalculated)
+            {
+                double dblFtLb = objDRCalc.LBF;
+                double dblRunningTotal = objDRCalc.Newtons;
             }
 
             ViewBag.gradesList = grades;
