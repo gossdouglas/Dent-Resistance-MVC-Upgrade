@@ -42,14 +42,16 @@ namespace Dent_Oil_Canning2.Controllers
 
             //Formula objDRCalc = new Formula();
             bool bCalculated;
-            //bCalculated = objDRCalc.Calculate(1, 150, 15000, .25, .25, .65);
-            bCalculated = objDRCalc.Calculate(-1, -1, -1, 0, 0, 0);
-            decimal.Round((decimal)objDRCalc.LBF, 2);
+            bCalculated = objDRCalc.Calculate(8, 150, 15000, .65, .3, .25);
+            //bCalculated = objDRCalc.Calculate(-1, -1, -1, 0, 0, 0);
+            //decimal.Round((decimal)objDRCalc.LBF, 2);
+
+            double dblFtLb, dblRunningTotal;
 
             if (bCalculated)
             {
-                double dblFtLb = objDRCalc.LBF;
-                double dblRunningTotal = objDRCalc.Newtons;
+                dblFtLb = Math.Round(objDRCalc.LBF, 2);
+                dblRunningTotal = Math.Round(objDRCalc.Newtons, 2);
             }
 
             ViewBag.gradesList = grades;

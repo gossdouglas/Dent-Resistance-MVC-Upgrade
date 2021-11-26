@@ -156,6 +156,10 @@
     <Compile Include="ViewModels\DrGradesViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Add-ons\DRFormula_COMplus_source\Calculations.cls" />
+    <Content Include="Add-ons\DRFormula_COMplus_source\DRFormula.dll" />
+    <Content Include="Add-ons\DRFormula_COMplus_source\Formula.cls" />
+    <Content Include="Add-ons\DRFormula_COMplus_source\modGetDataFromDB.bas" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -166,6 +170,11 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Add-ons\DRFormula_COMplus_source\.vs\ProjectSettings.json" />
+    <Content Include="Add-ons\DRFormula_COMplus_source\.vs\slnx.sqlite" />
+    <Content Include="Add-ons\DRFormula_COMplus_source\DRFormula.exp" />
+    <Content Include="Add-ons\DRFormula_COMplus_source\DRFormula.lib" />
+    <Content Include="Add-ons\DRFormula_COMplus_source\DRFormula.vbp" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

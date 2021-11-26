@@ -91,7 +91,7 @@ On Error GoTo ErrHandler
         
         ' Loop through the formulas and add their results
         If rsFormula.RecordCount > 0 Then
-        
+
             dblRunningTotal = dblRunningTotal + dblConstant
             Set clcCalc = New Calculations
             
@@ -132,10 +132,10 @@ On Error GoTo ErrHandler
     
     ' put the results into the private mdblNewtons variable
     mdblNewtons = dblRunningTotal
-    
+
     ' All went well
     Calculate = True
-    
+
     Exit Function
 
 ErrHandler:
