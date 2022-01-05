@@ -264,3 +264,4 @@ C:\Users\gosstony\OneDrive - ArcelorMittal\Documents\GitHub\Dent-Oil-Canning2\De
 C:\Users\gosstony\OneDrive - ArcelorMittal\Documents\GitHub\Dent-Oil-Canning2\Dent-Resistance-MVC-Upgrade\Dent-Oil-Canning2\obj\Debug\Dent-Oil-Canning2.csproj.AssemblyReference.cache
 C:\Users\gosstony\OneDrive - ArcelorMittal\Documents\GitHub\Dent-Oil-Canning2\Dent-Resistance-MVC-Upgrade\Dent-Oil-Canning2\obj\Debug\Interop.DRFormula.dll
 C:\Users\gosstony\OneDrive - ArcelorMittal\Documents\GitHub\Dent-Oil-Canning2\Dent-Resistance-MVC-Upgrade\Dent-Oil-Canning2\obj\Debug\Dent-Oil-Canning2.csproj.ResolveComReference.cache
+C:\Users\gosstony\OneDrive - ArcelorMittal\Documents\GitHub\Dent-Oil-Canning2\Dent-Resistance-MVC-Upgrade\Dent-Oil-Canning2\obj\Debug\Dent-Oil-Canning2.csproj.CopyComplete

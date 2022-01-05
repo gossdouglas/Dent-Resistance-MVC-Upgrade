@@ -1,0 +1,10 @@
+﻿body {
+}
+
+TH {
+    text-align: center;
+    border: 1px solid black;
+    width: 11%;
+    vertical-align: bottom;
+    white-space: nowrap;
+}

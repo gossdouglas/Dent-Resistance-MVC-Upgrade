@@ -24,7 +24,7 @@ namespace Dent_Oil_Canning2.Controllers
 
             foreach (dr_Grades grade in gradesList)
             {
-                if (grade.model == 1)
+                if (grade.model == 1 && grade.publish == 1)
                 {
                     var tempText = grade.grade_name.ToString();
 
@@ -63,11 +63,12 @@ namespace Dent_Oil_Canning2.Controllers
         }
 
         [HttpPost]
-        public ActionResult Calculate()
+        public ActionResult Calculate(DrGradesViewModel model)
         {
-            
 
-            return View();
+
+            //return View("Index");
+            return RedirectToAction("Index");
         }
 
         protected override void Dispose(bool disposing)

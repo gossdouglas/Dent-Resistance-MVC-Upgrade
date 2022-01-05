@@ -28,5 +28,11 @@ namespace Dent_Oil_Canning2.ViewModels
         public DateTime date_updated { get; set; }
 
         public string updated_by { get; set; }
+
+        public int intR1 { get; set; }
+        public int intR2 { get; set; }
+        public float fltMajStrain { get; set; }
+        public float fltMinStrain { get; set; }
+        public float fltThickness { get; set; }
     }
 }

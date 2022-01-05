@@ -1,64 +1,97 @@
-﻿@using Dent_Oil_Canning2.Models
-@model dr_Grades
+﻿@*@using Dent_Oil_Canning2.Models
+    @model dr_Grades*@
+
+@using Dent_Oil_Canning2.ViewModels
+@model DrGradesViewModel
 
 <table class="table" align='center' width='50%' cellpadding=0 cellspacing=0 border=0>
     <tr>
-        <th width='11%' nowrap align=center valign="bottom" rowspan=2 style="border:1px solid black;">&nbsp;Grade&nbsp;</th>
-        <th width='11%' nowrap align=center valign='bottom' colspan=2 style="border:1px solid black;">
+        <th style="vertical-align:bottom" rowspan=2>&nbsp;Grade&nbsp;</th>
+        <th style="vertical-align:bottom" colspan=2>
             &nbsp;Radius of<br>Curvature<br><small>
                 (see
                 Diagram)
             </small>&nbsp;
         </th>
-        <th width='11%' nowrap align=center valign='bottom' rowspan=2 style="border:1px solid black;">&nbsp;Major&nbsp;<br>&nbsp;Strain&nbsp;<br>(%)</th>
-        <th width='11%' nowrap align=center valign='bottom' rowspan=2 style="border:1px solid black;">&nbsp;Minor&nbsp;<br>&nbsp;Strain&nbsp;<br>(%)</th>
-        <th width='11%' nowrap align=center valign='bottom' rowspan=2 style="border:1px solid black;">&nbsp;Thickness&nbsp;<br>(mm)</th>
-        <th width='11%' nowrap align=center valign='bottom' rowspan=2 style="border:1px solid black;">&nbsp;Dent&nbsp;<br>&nbsp;Depth&nbsp;<br>(mm)</th>
-        <th width='11%' nowrap align=center valign='bottom' rowspan=2 style="border:1px solid black;">&nbsp;Newton&nbsp;<br>(N)</th>
-        <th width='12%' nowrap align=center valign='bottom' rowspan=2 style="border:1px solid black;">&nbsp;Lb. Force&nbsp;<br>(lbf)</th>
+        <th style="vertical-align:bottom" rowspan=2>&nbsp;Major&nbsp;<br>&nbsp;Strain&nbsp;<br>(%)</th>
+        <th style="vertical-align:bottom" rowspan=2>&nbsp;Minor&nbsp;<br>&nbsp;Strain&nbsp;<br>(%)</th>
+        <th style="vertical-align:bottom" rowspan=2>&nbsp;Thickness&nbsp;<br>(mm)</th>
+        <th style="vertical-align:bottom" rowspan=2>&nbsp;Dent&nbsp;<br>&nbsp;Depth&nbsp;<br>(mm)</th>
+        <th style="vertical-align:bottom" rowspan=2>&nbsp;Newton&nbsp;<br>(N)</th>
+        <th style="vertical-align:bottom" rowspan=2>&nbsp;Lb. Force&nbsp;<br>(lbf)</th>
     </tr>
     <tr>
-        <th width='11%' nowrap align=center valign='bottom'>&nbsp;R<sub>1</sub>&nbsp;<br>(mm)</th>
-        <th width='11%' nowrap align=center valign='bottom'>&nbsp;R<sub>2</sub>&nbsp;<br>(mm)</th>      
+        <th style="vertical-align:bottom">&nbsp;R<sub>1</sub>&nbsp;<br>(mm)</th>
+        <th style="vertical-align:bottom">&nbsp;R<sub>2</sub>&nbsp;<br>(mm)</th>
     </tr>
     <tr>
         <td width='11%' nowrap align=center valign='top' style="border:1px solid black;">
-                @Html.DropDownListFor(model => model.grade_name, (List<SelectListItem>)ViewBag.gradesList, null, new { id = "GradeKey", name = "GradeKey", @class = "form-control" })
+            @Html.DropDownListFor(model => model.grade_name, (List<SelectListItem>)ViewBag.gradesList, null, new { id = "GradeKey", name = "GradeKey", @class = "form-control" })
         </td>
         <td width='11%' nowrap align=center bgcolor='' style="border:1px solid black;">
-            &nbsp;
+            @*&nbsp;
             <input type='Text' id='R1' name='R1'
-                    size='5' value='' class=small>&nbsp;
+                size='5' value='' class=small>&nbsp;*@
+            @Html.TextBoxFor(m => m.intR1, new { @class = "form-control m-input" })
         </td>
         <td width='11%' nowrap align=center bgcolor='' style="border:1px solid black;">
-            &nbsp;
-            <input type='text' id='R2' name='R2' 
-                   size='5' value='' class=small>&nbsp;
+            @*&nbsp;
+        <input type='text' id='R2' name='R2'
+               size='5' value='' class=small>&nbsp;*@
+            @Html.TextBoxFor(m => m.intR2, new { @class = "form-control m-input" })
         </td>
         <td width='11%' nowrap align=center bgcolor='' style="border:1px solid black;">
-            &nbsp;
-            <input type='text' id='MajStrain'
-                   size='3' name='MajStrain' value=''
-                   class=small>&nbsp;
+            @*&nbsp;
+        <input type='text' id='MajStrain'
+               size='3' name='MajStrain' value=''
+               class=small>&nbsp;*@
+            @Html.TextBoxFor(m => m.fltMajStrain, new { @class = "form-control m-input" })
         </td>
         <td width='11%' nowrap align=center bgcolor='' style="border:1px solid black;">
-            &nbsp;
-            <input type='text' id='MinStrain'
-                   size='3' name='MinStrain' value=''
-                   class=small>&nbsp;
+            @*&nbsp;
+        <input type='text' id='MinStrain'
+               size='3' name='MinStrain' value=''
+               class=small>&nbsp;*@
+            @Html.TextBoxFor(m => m.fltMinStrain, new { @class = "form-control m-input" })
         </td>
         <td width='11%' nowrap align=center bgcolor='' style="border:1px solid black;">
-            &nbsp;
-            <input type='text' id='Thickness' 
-                   size='3' name='Thickness' value=''
-                   class=small>&nbsp;
+            @*&nbsp;
+        <input type='text' id='Thickness'
+               size='3' name='Thickness' value=''
+               class=small>&nbsp;*@
+            @Html.TextBoxFor(m => m.fltThickness, new { @class = "form-control m-input" })
         </td>
         <td width='11%' nowrap align=center style="border:1px solid black;">&nbsp;.1&nbsp;</td>
         <td width='23%' nowrap align=center colspan=2 style="border:1px solid black;">
-            <input type='button' value='Calculate' id='Submit' name='Submit' onclick='verify()'>
+
+            <input type='submit' value='Calculate' id='Submit' name='Submit' onclick='verify()'>
+            @*<input type='button' value='Calculate' id='Submit' name='Submit' onclick='verify()'>*@
+
             <input type='hidden' value='yes' id='Submitted' name='Submitted'>
             <input type='hidden' value='" & request("mode") & "' id='mode' name='mode'>
             <input type='hidden' value='" & strGradeKey & "' id='CurrentGradeKey' name='CurrentGradeKey'>
+        </td>
+    </tr>
+    <tr>
+        <td width='11%' nowrap align=center valign='top' style="border:1px solid black;">
+        </td>
+        <td width='11%' nowrap align=center bgcolor='' style="border:1px solid black;">
+            <small>150<br>to<br>2500</small>
+        </td>
+        <td width='11%' nowrap align=center bgcolor='' style="border:1px solid black;">
+            <small>15000<br>to<br>150000</small>
+        </td>
+        <td width='11%' nowrap align=center bgcolor='' style="border:1px solid black;">
+            <small>0.25%<br>to<br>2%</small>&nbsp;
+        </td>
+        <td width='11%' nowrap align=center bgcolor='' style="border:1px solid black;">
+            <small>0.25%<br>to<br>2%</small>
+        </td>
+        <td width='11%' nowrap align=center bgcolor='' style="border:1px solid black;">
+            <small>0.65mm<br>to<br>0.8mm</small>
+        </td>
+        <td width='11%' nowrap align=center style="border:1px solid black;"></td>
+        <td width='23%' nowrap align=center colspan=2 style="border:1px solid black;">
         </td>
     </tr>
 </table>
