@@ -42,9 +42,13 @@ namespace Dent_Oil_Canning2.Controllers
 
             //Formula objDRCalc = new Formula();
             bool bCalculated;
-            bCalculated = objDRCalc.Calculate(8, 150, 15000, .65, .3, .25);
+            //found on 18may22 by goss
+            //bCalculated = objDRCalc.Calculate(8, 150, 15000, .65, .25, .25);
             //bCalculated = objDRCalc.Calculate(-1, -1, -1, 0, 0, 0);
             //decimal.Round((decimal)objDRCalc.LBF, 2);
+
+            //discovery on 18may22 by goss
+            bCalculated = objDRCalc.Calculate(1, 150, 15000, .65, .25, .25);
 
             double dblFtLb, dblRunningTotal;
 

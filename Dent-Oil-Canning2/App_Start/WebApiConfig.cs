@@ -15,8 +15,13 @@ namespace Dent_Oil_Canning2
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(
+                //name: "DefaultApi",
+                //routeTemplate: "api/{controller}/{id}",
+                ////defaults: new { id = RouteParameter.Optional }
+                //defaults: new { id = RouteParameter.Optional, action = RouteParameter.Optional }
+
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
+                routeTemplate: "api/{controller}/{action}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
         }
