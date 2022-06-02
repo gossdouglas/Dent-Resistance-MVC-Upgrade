@@ -10,7 +10,6 @@ namespace Dent_Oil_Canning2.Controllers
 {
     public class DentResistanceController : ApiController
     {
-        //[HttpGet]
         [HttpPost]
         public ReturnObject<Calculation> CalculateModelOne(Calculation model)
         {
@@ -39,7 +38,7 @@ namespace Dent_Oil_Canning2.Controllers
             double dblResultIntercept, dblResultSlope;
             DRFormula.Formula objDRCalc = new DRFormula.Formula();
 
-            bCalculated = objDRCalc.CalculateM2(model.GradeKey, model.R1, model.R2, model.Thickness, model.MajorStrain, model.MinorStrain, "INTERCEPT");
+            CalculateOilCanningbCalculated = objDRCalc.CalculateM2(model.GradeKey, model.R1, model.R2, model.Thickness, model.MajorStrain, model.MinorStrain, "INTERCEPT");
 
             //if (bCalculated)
             //{

@@ -53,6 +53,7 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -145,14 +146,17 @@
     <Compile Include="Controllers\DentResistanceController.cs" />
     <Compile Include="Controllers\dentResistanceModelController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OilCanningController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Calculation.cs" />
+    <Compile Include="Models\Chart.cs" />
     <Compile Include="Models\dr_Formulas.cs" />
     <Compile Include="Models\dr_Grades.cs" />
+    <Compile Include="Models\OilCanning.cs" />
     <Compile Include="Models\ReturnObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\DrCalcViewModel - Copy.cs" />
@@ -163,6 +167,11 @@
     <Content Include="Add-ons\DRFormula_COMplus_source\DRFormula.dll" />
     <Content Include="Add-ons\DRFormula_COMplus_source\Formula.cls" />
     <Content Include="Add-ons\DRFormula_COMplus_source\modGetDataFromDB.bas" />
+    <Content Include="Add-ons\Nice-Touchable-jQuery-Dial-Plugin-Knob\dist\jquery.knob.min.js" />
+    <Content Include="Add-ons\Nice-Touchable-jQuery-Dial-Plugin-Knob\excanvas.js" />
+    <Content Include="Add-ons\Nice-Touchable-jQuery-Dial-Plugin-Knob\index.html" />
+    <Content Include="Add-ons\Nice-Touchable-jQuery-Dial-Plugin-Knob\js\jquery.knob.js" />
+    <Content Include="Add-ons\Nice-Touchable-jQuery-Dial-Plugin-Knob\secretplan.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -171,6 +180,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="index.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Add-ons\DRFormula_COMplus_source\.vs\ProjectSettings.json" />
@@ -178,6 +188,12 @@
     <Content Include="Add-ons\DRFormula_COMplus_source\DRFormula.exp" />
     <Content Include="Add-ons\DRFormula_COMplus_source\DRFormula.lib" />
     <Content Include="Add-ons\DRFormula_COMplus_source\DRFormula.vbp" />
+    <Content Include="Add-ons\Nice-Touchable-jQuery-Dial-Plugin-Knob\.gitignore" />
+    <Content Include="Add-ons\Nice-Touchable-jQuery-Dial-Plugin-Knob\bower.json" />
+    <Content Include="Add-ons\Nice-Touchable-jQuery-Dial-Plugin-Knob\knob.jquery.json" />
+    <Content Include="Add-ons\Nice-Touchable-jQuery-Dial-Plugin-Knob\LICENSE" />
+    <Content Include="Add-ons\Nice-Touchable-jQuery-Dial-Plugin-Knob\package.json" />
+    <Content Include="Add-ons\Nice-Touchable-jQuery-Dial-Plugin-Knob\README.md" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -189,9 +205,11 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\OilCanning.js" />
     <Content Include="Styles\dent_resistance.css" />
     <Content Include="Styles\ispat_pc.css" />
     <Content Include="Styles\styles.css" />
+    <Content Include="Views\Home\OilCanning.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
