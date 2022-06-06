@@ -38,20 +38,7 @@ namespace Dent_Oil_Canning2.Controllers
             double dblResultIntercept, dblResultSlope;
             DRFormula.Formula objDRCalc = new DRFormula.Formula();
 
-            CalculateOilCanningbCalculated = objDRCalc.CalculateM2(model.GradeKey, model.R1, model.R2, model.Thickness, model.MajorStrain, model.MinorStrain, "INTERCEPT");
-
-            //if (bCalculated)
-            //{
-            //    dblResultIntercept = objDRCalc.Result;
-            //}
-
-            //bCalculated = objDRCalc.CalculateM2(model.GradeKey, model.R1, model.R2, model.Thickness, model.MajorStrain, model.MinorStrain, "SLOPE");
-
-            //if (bCalculated)
-            //{
-            //    dblResultSlope = objDRCalc.Result;
-            //    model.Result = Math.Round((model.PoundsForce - dblResultIntercept)/ dblResultSlope, 2);
-            //}
+            bCalculated = objDRCalc.CalculateM2(model.GradeKey, model.R1, model.R2, model.Thickness, model.MajorStrain, model.MinorStrain, "INTERCEPT");
 
             if (bCalculated)
             {
@@ -75,32 +62,5 @@ namespace Dent_Oil_Canning2.Controllers
                 return new ReturnObject<Calculation>() { success = false, data = model, validated = true };
             }
         }
-
-        //// GET: api/DentResistance
-        //public IEnumerable<string> Get()
-        //{
-        //    return new string[] { "value1", "value2" };
-        //}
-
-        //// GET: api/DentResistance/5
-        //public string Get(int id)
-        //{
-        //    return "value";
-        //}
-
-        //// POST: api/DentResistance
-        //public void Post([FromBody]string value)
-        //{
-        //}
-
-        //// PUT: api/DentResistance/5
-        //public void Put(int id, [FromBody]string value)
-        //{
-        //}
-
-        //// DELETE: api/DentResistance/5
-        //public void Delete(int id)
-        //{
-        //}
     }
 }
